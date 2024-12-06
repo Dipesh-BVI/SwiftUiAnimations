@@ -15,7 +15,7 @@ struct Avatar: View {
             .resizable()
             .frame(width: 100, height: 100)
             .clipShape(.circle)
-//            .scaleEffect(selected ? 1.5 : 1.0)
+            .scaleEffect(selected ? 1.5 : 1.0)
             .offset(x: selected ? -100 : 100)
             .animation(.bouncy, value: selected)
             .onTapGesture {
